@@ -18,21 +18,23 @@
     <meta property="og:image" content="undefined"/>
   
 
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
   <link rel="alternate" href="/atom.xml" title="崔杰的博客" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+  
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?aa7c54cc68c90deafcd95afdffd768e1";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
 
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?aa7c54cc68c90deafcd95afdffd768e1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+
 
 
 </head>
@@ -99,7 +101,8 @@ var _hmt = _hmt || [];
     
   </div>
 </div></div>
-    <aside id="sidebar" class="alignright">
+    
+	<aside id="sidebar" class="alignright">
   <!--
 <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
@@ -109,7 +112,9 @@ var _hmt = _hmt || [];
 </div>-->
 
 <div class="search">
-	<input type="text" class="st-default-search-input">
+  <form accept-charset="utf-8">
+	<input type="text" class="st-default-search-input" placeholder="搜索">
+  </form>  
 </div>
 
 <script type="text/javascript">
@@ -154,6 +159,50 @@ var _hmt = _hmt || [];
   </ul>
 </div>
 
+
+  
+  <div class="widget tag">
+    <h3 class="title">归档</h3>
+    <div class="entry">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2015/10/04/hexo学习/">hexo学习</a>
+      </li>
+    
+      <li>
+        <a href="/2015/10/04/钢铁侠1/">钢铁侠1</a>
+      </li>
+    
+      <li>
+        <a href="/2015/10/04/环太平洋/">环太平洋</a>
+      </li>
+    
+      <li>
+        <a href="/2015/10/04/港囧/">港囧</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/大陆/" style="font-size: 10px;">大陆</a> <a href="/tags/学习/" style="font-size: 10px;">学习</a> <a href="/tags/怪兽/" style="font-size: 10px;">怪兽</a> <a href="/tags/机器人/" style="font-size: 20px;">机器人</a> <a href="/tags/深圳/" style="font-size: 10px;">深圳</a> <a href="/tags/科幻/" style="font-size: 20px;">科幻</a>
+  </div>
+</div>
+
 </aside>
     <div class="clearfix"></div>
   </div>
@@ -163,20 +212,37 @@ var _hmt = _hmt || [];
   
 </div>
 <div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- jQuery -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
 
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:'cuijie'};
+	  (function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->	
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+	<script src="/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	(function($){
+	  $('.fancybox').fancybox();
+	})(jQuery);
+	</script>
 
 </body>
 </html>
