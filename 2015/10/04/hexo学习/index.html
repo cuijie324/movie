@@ -94,10 +94,13 @@
     <div class="entry">
       
         <p>学习hexo使用，发现说明文档很好，还算详细。不过自己选的这个模版有些问题。</p>
-<p>评论换成了多说，谷歌统计换成了百度统计，去掉了一些无用代码。<br>jQuery库换成了jQuery官网提过的CDN。</p>
+<p>评论换成了多说，谷歌统计换成了百度统计，去掉了一些无用代码。原来的jQuery库换成了jQuery官网提供的CDN。</p>
 <p>每篇文章的参数里可以指定photos，里面的图片就会像焦点图一样</p>
 <p>列表页显示出评论按钮了，可以链接到列表页。在网站的配置文件里的域名要写完全，不然有些链接会变成相对地址。</p>
 <p>修改了菜单项的显示，可以根据语言国际化</p>
+<p>右侧的小部件都打开了，但是归档那个显示的有问题，时间跟数量靠的太近了</p>
+<p><em>还有搜索有问题，另外列表页里怎么不显示文章摘要，显示的是全部内容了</em></p>
+<p>使用swiftype做站内搜索，还不错</p>
 <blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
 <footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter</a></cite></footer></blockquote>
 <blockquote class="pullquote "><p>content</p>
@@ -153,19 +156,9 @@
 </div>-->
 
 <div class="search">
-  <form accept-charset="utf-8">
 	<input type="text" class="st-default-search-input" placeholder="搜索">
-  </form>  
 </div>
 
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
-
-  _st('install','ZyzLJrSoSFzKU-eFjdAb');
-</script>
 
   
 <div class="widget tag">
@@ -279,6 +272,16 @@
 	  </script>
 	<!-- 多说公共JS代码 end -->	
 
+
+<!-- swiftype搜索 -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','ZyzLJrSoSFzKU-eFjdAb','2.0.0');
+</script>
 
 <!-- 图片弹出展示 -->
 
